@@ -1,0 +1,73 @@
+.Logo {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.Titulo {
+    width: fit-content;
+    height: 90px;
+    position: absolute;
+    border: 30px;
+}
+
+.BarraNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(255, 140, 140);
+}
+
+li {
+    float: left;
+}
+
+li a,
+.DropBtn {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+li a:hover,
+.DownBar:hover .DropBtn {
+    background-color: rgb(243, 174, 174);
+    color: white;
+}
+
+.DownBar-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(202, 157, 157);
+    min-width: 160px;
+    box-shadow: 5px 8px 10px 0px black;
+    z-index: 3; /*superposicion de la barra*/
+}
+
+.DownBar-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.DownBar-content a:hover {
+    background-color: gray;
+    color: white;
+}
+
+.DownBar:hover .DownBar-content {
+    display: block;
+}
+
+body {
+    background-image: url(../imagenes/style\ general/foot.png);
+    background-size: 10%;
+    box-sizing: content-box;
+    background-color: rgb(255, 202, 202);
+}

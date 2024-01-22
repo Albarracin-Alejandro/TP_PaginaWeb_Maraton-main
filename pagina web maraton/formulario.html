@@ -1,0 +1,98 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscripcion a Maraton</title>
+
+  
+  <link rel="stylesheet" type="text/css" href="css/style-formularios.css">
+
+
+  
+  </head>
+
+
+<body>  
+  
+  <!-- formulario de contacto en html y css -->  
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <SCRIPT Language="JavaScript">
+    
+    function mostrarMensaje() {
+      let nombre=document.getElementById("nombre")
+      let mail=document.getElementById("email")
+      let telefono=document.getElementById("telefono")
+      let edad=document.getElementById("Edad")
+      
+  
+      var bool=false;
+      if((nombre.value==="")||(mail.value==="")||(telefono.value==="")||(edad.value==="") ){
+        bool=false;}
+        else{
+          bool=true;
+        }
+      
+      if(bool==true){
+        window.alert("Felicitaciones, tu inscripcion se generó correctamente!!!")
+      }
+
+  
+    }
+    </SCRIPT>
+
+  <div class="formularios-maraton">
+
+    <div class="formulario">      
+      <h1>Inscripción a Maratón</h1>
+        <h3>Complete el formulario para inscribirse </h3>
+
+
+          <form action="submeter-formulario.php" method="post">       
+
+            
+                <p>
+                  <label for="nombre" class="colocar_nombre">Nombre y Apellido
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre y apellido" minlength="3">
+
+                </p>
+              
+                <p>
+                  <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>
+
+            
+                <p>
+                  <label for="telefone" class="colocar_telefono">Teléfono
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>    
+              
+                <p>
+                  <label for="website" class="colocar_website">Edad
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="number" name="introducir_edad" id="Edad" placeholder="Escribe tu edad">
+                </p>     
+              
+                     
+              
+                <button type="submit" name="enviar_formulario" id="enviar" onclick="mostrarMensaje()"\><p>Confirmar</p>
+                
+                
+                </button>
+
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>          
+            
+          </form>
+    </div>  
+  </div>
+
+</body>
+</html>

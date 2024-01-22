@@ -1,0 +1,38 @@
+
+
+
+.Body {
+    padding: 20px;
+}
+
+h2 ,h5 ,p {
+    background-color: rgb(255, 140, 140);
+}
+
+.Footer {
+    padding: 5px;
+    text-align: center;
+    background: rgb(255, 140, 140);
+    margin-top: 5px;
+}
+
+.row {
+    max-width: 112.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+    display: flex;
+}
+
+.large-3{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 20%;
+    margin-bottom: 30px;
+}
+
+.columns, .columns{
+    width: 100%;
+    clear: left;
+}
